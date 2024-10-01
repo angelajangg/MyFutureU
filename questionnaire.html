@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+
+    <style>
+        /* Internal Stylesheet */
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <header>
+        <h1>Find Your Future U!</h1>
+        <nav>
+            <a href="home.html">Home</a> | 
+            <a href="questionnaire.html">Find Your Match</a> | 
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>College Matchmaking Questionnaire</h2>
+        <form action="#">
+            <label for="location">Preferred Location:</label><br>
+            <select id="location" name="location">
+                <option value="selectone">Select One...</option>
+                <option value="urban">Urban</option>
+                <option value="suburban">Suburban</option>
+                <option value="rural">Rural</option>
+            </select><br><br>
+
+            <label for="population">Campus Size:</label><br>
+            <select id="population" name="population">
+                <option value="selectone">Select One...</option>
+                <option value="small">Small Campus (~Under 5,000)</option>
+                <option value="medium">Medim Campus (~5,000 - 15,000)</option>
+                <option value="large">Large Campus (~Over 15,000)</option>
+            </select><br><br>
+
+            <label for="wanted major">Desired Major:</label><br>
+            <select id="wanted major" name="wanted major">
+                <option value="selectone">Select One...</option>
+                <option value="premed">Pre-Med</option>
+                <option value="predental">Pre-Dental</option>
+                <option value="prelaw">Pre-Law</option>
+                <option value="business">Business</option>
+                <option value="cs">Computer Science</option>
+                <option value="uiux">UI/UX Design</option>
+                <option value="art">Art</option>
+                <option value="history">History</option>
+                <option value="education">Education</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+
+            <label for="campus">Institution Preference:</label><br>
+            <select id="campus" name="campus">
+                <option value="selectone">Select One...</option>
+                <option value="public school">Public School</option>
+                <option value="private school">Private School</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="demographic">Preferred Demographic:</label><br>
+            <input type="text" id="demographic" name="demographic" 
+            placeholder="E.g. Diverse, STEM-focused, etc."><br><br>
+
+            <input type="submit" value="Find My College">
+        </form>
+
+
+        <h3>Top Ranked Colleges by Major:</h3>
+        <table>
+            <tr>
+                <th>Major</th>
+                <th>Top Colleges</th>
+            </tr>
+            <tr>
+                <td>Computer Science</td>
+                <td>MIT, Stanford, Carnegie Mellon</td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td>Harvard, Johns Hopkins, Stanford</td>
+            </tr>
+                <td>Art & Design</td>
+                <td>Rhode Island School of Design, Pratt Institute, CalArts</td>
+            </tr>
+            <tr>
+                <td>Law</td>
+                <td>Yale, Stanford, Harvard</td>
+            </tr>
+            <tr>
+                <td>Medicine</td>
+                <td>Harvard, Johns Hopkins, Stanford</td>
+            </tr>
+            <tr>
+                <td>Psychology</td>
+                <td>Stanford, UC Berkeley, Harvard</td>
+            </tr>
+            <tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyFutureU. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
